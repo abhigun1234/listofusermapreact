@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-function NavBar(props) {
+function Headers(props) {
     return (
         <div>
             <Navbar bg="light" expand="lg">
@@ -13,10 +13,12 @@ function NavBar(props) {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
 
-                            <NavLink activeClassName="active" className="nav-link" to="/dashboard">DashBoard</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/dashboard">Home</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/products">Products</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/aboutus">About Us</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/contactus">Contact Us</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/contactus">Go To See the New stores</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/register">Register</NavLink>
 
                         </Nav>
                     </Navbar.Collapse>
@@ -26,4 +28,4 @@ function NavBar(props) {
     );
 }
 
-export default NavBar;
+export default Headers;

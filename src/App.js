@@ -5,16 +5,28 @@ import ListOfUsers from './ListOfUsers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from './Dashboard';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './Header';
+import Headers from './Headers';
 import NoMatchFound from './NoMatchFound';
 import NavBar from './NavBar';
 import AboutUs from './AboutUs';
 import ContactUs from './ContactUs';
 import PageNotFound from './PageNotFound';
+import ProductDetails from './ProductDetails';
+import Home from './Home';
+import Register from './Register';
 
 function App() {
   return (
     <div className="App">
+  
+      <BrowserRouter>
+      <Headers></Headers>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/aboutus" element={<AboutUs></AboutUs>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+      </Routes>
+      </BrowserRouter>
 
       {/* <BrowserRouter>
         <Header></Header>
@@ -26,17 +38,17 @@ function App() {
       </BrowserRouter> */}
 
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <NavBar></NavBar>
         <Routes>
           <Route path='/' element={<Dashboard></Dashboard>}></Route>
-          <Route exact path='/aboutus' element={<AboutUs></AboutUs>}></Route>
+          <Route exact path='/products' element={<ProductDetails></ProductDetails>}></Route>
           <Route exact path='/dashboard' element={<Dashboard></Dashboard>}></Route>
           <Route exact path='/contactus' element={<ContactUs></ContactUs>}></Route>
           <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
           <Route></Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }
