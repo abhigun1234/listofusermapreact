@@ -19,6 +19,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AddProduct from './AddProduct';
 import MyHome from './MyHome';
 import ProductList from './ProductList';
+import Forms from './Forms';
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
 
     <Route path="/products" element={<ProductList></ProductList>}></Route>
     <Route path="/about" element={<AboutUs></AboutUs>}></Route>
+    <Route path="/forms" element={<Forms></Forms>}></Route>
     </Routes>
     
     </BrowserRouter>

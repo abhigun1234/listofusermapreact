@@ -47,6 +47,7 @@ function NavBar(props) {
                              <NavLink activeClassName="active" className="nav-link" to="/products">Products</NavLink>
                              <NavLink activeClassName="active" className="nav-link" to="/about">About Us</NavLink>
                              <NavLink activeClassName="active" className="nav-link" to="/contactus">Contact Us</NavLink>
+                             <NavLink activeClassName="active" className="nav-link" to="/forms">Forms</NavLink>
                      
                          </Nav>
                      </Navbar.Collapse>
