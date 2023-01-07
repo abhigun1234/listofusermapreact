@@ -18,7 +18,7 @@ function Headers(props) {
                             <NavLink activeClassName="active" className="nav-link" to="/aboutus">About Us</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/contactus">Contact Us</NavLink>
                             <NavLink activeClassName="active" className="nav-link" to="/contactus">Go To See the New stores</NavLink>
-                            <NavLink activeClassName="active" className="nav-link" to="/register">Register</NavLink>
+                            <NavLink activeClassName="active" className="nav-link" to="/add">AddProduct</NavLink>
 
                         </Nav>
                     </Navbar.Collapse>

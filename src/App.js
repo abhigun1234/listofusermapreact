@@ -14,19 +14,43 @@ import PageNotFound from './PageNotFound';
 import ProductDetails from './ProductDetails';
 import Home from './Home';
 import Register from './Register';
-
+import PostData from './PostData';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import AddProduct from './AddProduct';
+import MyHome from './MyHome';
+import ProductList from './ProductList';
 function App() {
   return (
     <div className="App">
-  
-      <BrowserRouter>
+      
+    <BrowserRouter>
+    <NavBar></NavBar>
+    <Routes>
+    <Route path="/" element={<MyHome></MyHome>}></Route>
+
+    <Route path="/products" element={<ProductList></ProductList>}></Route>
+    <Route path="/about" element={<AboutUs></AboutUs>}></Route>
+    </Routes>
+    
+    </BrowserRouter>
+
+    {/* <BrowserRouter>
+      <Headers></Headers>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/aboutus" element={<AboutUs></AboutUs>}></Route>
+        <Route path="/add" element={<AddProduct></AddProduct>}></Route>
+      </Routes>
+      </BrowserRouter>  */}
+    {/* </BrowserRouter> */}
+      {/* <BrowserRouter>
       <Headers></Headers>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/aboutus" element={<AboutUs></AboutUs>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
 
       {/* <BrowserRouter>
         <Header></Header>
